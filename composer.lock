@@ -4,20 +4,20 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ed381b53da49b363a7b50e90629c2be0",
+    "hash": "372a806b929aab78b8bce3ad1ca16ef9",
     "packages": [
         {
             "name": "guzzlehttp/guzzle",
-            "version": "dev-master",
+            "version": "4.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle.git",
-                "reference": "8e90e67c65b0dc08ef608c8993d6cb08b94b4b1a"
+                "reference": "5ae164dae6e65784286a698800190bc094407f7c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/8e90e67c65b0dc08ef608c8993d6cb08b94b4b1a",
-                "reference": "8e90e67c65b0dc08ef608c8993d6cb08b94b4b1a",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/5ae164dae6e65784286a698800190bc094407f7c",
+                "reference": "5ae164dae6e65784286a698800190bc094407f7c",
                 "shasum": ""
             },
             "require": {
@@ -69,7 +69,7 @@
                 "rest",
                 "web service"
             ],
-            "time": "2014-07-23 19:40:03"
+            "time": "2014-07-23 00:52:39"
         },
         {
             "name": "guzzlehttp/streams",
@@ -132,9 +132,9 @@
 
     ],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "guzzlehttp/guzzle": 20
-    },
+    "stability-flags": [
+
+    ],
     "prefer-stable": false,
     "platform": [
 

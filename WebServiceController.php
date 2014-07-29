@@ -4,8 +4,9 @@ require 'vendor/autoload.php';
 include 'XmlImporter.php';
 
 use \SimpleXMLElement;
+use GuzzleHttp\Client;
 
-$ServiceUrl = "localhost";
+$ServiceUrl = "http://192.168.99.50/Crminterface/xml";
 
 /* This is just a dummy record, that will be send */
 $result['id'] = '123456';
@@ -33,8 +34,15 @@ $rawxml = new SimpleXMLElement('<SendWebrequest></SendWebrequest>');
 $xml = myplace\XmlImporter::toXML($result, 'SendWebrequest',$rawxml);
 
 $ServiceUrl = htmlentities($ServiceUrl); //changed this to html_entity decode
-$client = new GuzzleHttp\Client();
-$request = $client->post($ServiceUrl, ['Content-Type' => 'text/xml; charset=UTF8'], $xml,['timeout' => 120]);
+$client = new Client();
+$request = $client->post($ServiceUrl,[
+  'headers' => [
+      'Content-Type' => 'text/xml; charset=UTF8'
+  ],
+  'body' => $xml,
+  'timeout' => 120
+]);
+
 $response = $request->send();
 echo $response->getBody();
 exit;
