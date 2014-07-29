@@ -56,17 +56,17 @@
     },
     {
         "name": "guzzlehttp/guzzle",
-        "version": "4.1.4",
-        "version_normalized": "4.1.4.0",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
         "source": {
             "type": "git",
             "url": "https://github.com/guzzle/guzzle.git",
-            "reference": "5ae164dae6e65784286a698800190bc094407f7c"
+            "reference": "8e90e67c65b0dc08ef608c8993d6cb08b94b4b1a"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/guzzle/guzzle/zipball/5ae164dae6e65784286a698800190bc094407f7c",
-            "reference": "5ae164dae6e65784286a698800190bc094407f7c",
+            "url": "https://api.github.com/repos/guzzle/guzzle/zipball/8e90e67c65b0dc08ef608c8993d6cb08b94b4b1a",
+            "reference": "8e90e67c65b0dc08ef608c8993d6cb08b94b4b1a",
             "shasum": ""
         },
         "require": {
@@ -82,14 +82,14 @@
         "suggest": {
             "ext-curl": "Guzzle will use specific adapters if cURL is present"
         },
-        "time": "2014-07-23 00:52:39",
+        "time": "2014-07-23 19:40:03",
         "type": "library",
         "extra": {
             "branch-alias": {
                 "dev-master": "4.1.x-dev"
             }
         },
-        "installation-source": "dist",
+        "installation-source": "source",
         "autoload": {
             "psr-4": {
                 "GuzzleHttp\\": "src/"
