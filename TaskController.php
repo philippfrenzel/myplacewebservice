@@ -37,7 +37,7 @@ $fields = $import->addChild('fields');
 $task = $fields->addChild('Tasks');
 
 $kostenstelle = $task->addChild('Rep','018');
-$kostenstelle->addAttribute('extkey',true);
+$kostenstelle->addAttribute('extkey','true');
 
 $task->addChild('Priority','mittel');
 $task->addChild('Subject','Check Move-Out');
@@ -52,7 +52,7 @@ header('Content-type: application/xml');
 //$rawxml = new SimpleXMLElement('<request action="_Erinnerung"><import dateformatin="ymd" extsystem="RentPlus"><fields><tasks></tasks></fields></import></request>');
 //$xml = myplace\XmlImporter::toXML($tasks, 'tasks',$rawxml);
 
-echo $xml = $request->asXML(); exit;
+$xml = $request->asXML(); //exit;
 
 $ServiceUrl = htmlentities($ServiceUrl); //changed this to html_entity decode
 $client = new Client();
