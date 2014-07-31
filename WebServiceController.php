@@ -6,7 +6,7 @@ include 'XmlImporter.php';
 use \SimpleXMLElement;
 use GuzzleHttp\Client;
 
-$ServiceUrl = "http://192.168.99.50/Crminterface/xml";
+$ServiceUrl = "http://192.168.99.55/Crminterface/xml";
 
 /* This is just a dummy record, that will be send */
 $result['id'] = '123456';
