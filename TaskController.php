@@ -6,7 +6,7 @@ include 'XmlImporter.php';
 use \SimpleXMLElement;
 use GuzzleHttp\Client;
 
-$ServiceUrl = "http://192.168.99.50/Crminterface/xml";
+$ServiceUrl = "http://81.223.114.170:62080/Crminterface/xml";
 
 /* This is just a dummy record, that will be send */
 /*
@@ -40,10 +40,10 @@ $kostenstelle = $task->addChild('Rep','018');
 $kostenstelle->addAttribute('extkey','true');
 
 $task->addChild('Priority','mittel');
-$task->addChild('Subject','Move Out: 4711');
+$task->addChild('Subject','Move Out: Birringer');
 $task->addChild('Text','Check MO (Abteil 4711, Kunde Philipp Frenzel)');
 $task->addChild('DueDate','20140801');
-$task->addChild('DueTime','08:10');
+$task->addChild('DueTime','14:40');
 $task->addChild('Tasktype','Erinnerung');
 $task->addChild('Taskstatus','Unbearbeitet');
 
