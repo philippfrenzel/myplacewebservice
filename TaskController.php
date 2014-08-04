@@ -40,7 +40,7 @@ $kostenstelle = $task->addChild('Rep','018');
 $kostenstelle->addAttribute('extkey','true');
 
 $task->addChild('Priority','mittel');
-$task->addChild('Subject','Move Out: Birringer');
+$task->addChild('Subject','MoveOut Kontrolle...');
 $task->addChild('Text','Check MO (Abteil 4711, Kunde Philipp Frenzel)');
 $task->addChild('DueDate','20140801');
 $task->addChild('DueTime','14:40');

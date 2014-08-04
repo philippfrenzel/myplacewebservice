@@ -33,6 +33,8 @@ header('Content-type: application/xml');
 $rawxml = new SimpleXMLElement('<SendWebrequest></SendWebrequest>');
 $xml = myplace\XmlImporter::toXML($result, 'SendWebrequest',$rawxml);
 
+echo $xml; exit;
+
 $ServiceUrl = htmlentities($ServiceUrl); //changed this to html_entity decode
 $client = new Client();
 $request = $client->post($ServiceUrl,[
